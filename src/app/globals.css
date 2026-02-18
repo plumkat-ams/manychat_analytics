@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Manychat-inspired light theme */
+    --background: 224 76% 98%;
+    --foreground: 226 46% 31%;
+    --card: 0 0% 100%;
+    --card-foreground: 226 46% 31%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 226 46% 31%;
+    --primary: 209 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 224 38% 95%;
+    --secondary-foreground: 226 46% 31%;
+    --muted: 224 38% 95%;
+    --muted-foreground: 224 32% 57%;
+    --accent: 224 38% 95%;
+    --accent-foreground: 226 46% 31%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 226 35% 92%;
+    --input: 226 35% 89%;
+    --ring: 209 100% 50%;
+    --radius: 0.75rem;
+
+    /* Sidebar */
+    --sidebar: 225 62% 17%;
+    --sidebar-foreground: 224 32% 73%;
+    --sidebar-active: 209 100% 50%;
+    --sidebar-active-foreground: 0 0% 100%;
+    --sidebar-hover: 225 50% 22%;
+
+    /* Chart colors - blue-centric palette */
+    --chart-1: 209 100% 50%;
+    --chart-2: 180 55% 45%;
+    --chart-3: 250 60% 58%;
+    --chart-4: 35 85% 55%;
+    --chart-5: 340 75% 55%;
+  }
+
+  .dark {
+    --background: 225 62% 10%;
+    --foreground: 224 32% 90%;
+    --card: 225 55% 14%;
+    --card-foreground: 224 32% 90%;
+    --popover: 225 55% 14%;
+    --popover-foreground: 224 32% 90%;
+    --primary: 209 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 225 50% 20%;
+    --secondary-foreground: 224 32% 90%;
+    --muted: 225 50% 20%;
+    --muted-foreground: 224 32% 60%;
+    --accent: 225 50% 20%;
+    --accent-foreground: 224 32% 90%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 225 50% 20%;
+    --input: 225 50% 20%;
+    --ring: 209 100% 50%;
+
+    --sidebar: 225 65% 10%;
+    --sidebar-foreground: 224 32% 60%;
+    --sidebar-active: 209 100% 50%;
+    --sidebar-active-foreground: 0 0% 100%;
+    --sidebar-hover: 225 55% 15%;
+
+    --chart-1: 209 100% 55%;
+    --chart-2: 180 55% 50%;
+    --chart-3: 250 60% 62%;
+    --chart-4: 35 85% 60%;
+    --chart-5: 340 75% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
