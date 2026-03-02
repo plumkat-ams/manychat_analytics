@@ -216,7 +216,7 @@ export default function OverviewPage() {
     <DashboardShell>
       <DashboardHeader
         title="Overview"
-        description="Your ManyChat command center"
+        description="Your Manychat command center"
         dateRange={preset}
         onDateRangeChange={setPreset}
       />

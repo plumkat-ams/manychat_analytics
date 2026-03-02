@@ -56,7 +56,7 @@ export default function LoginPage() {
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
             <span className="text-base font-bold text-white">M</span>
           </div>
-          <span className="text-lg font-semibold">ManyChat</span>
+          <span className="text-lg font-semibold">Manychat</span>
         </div>
 
         <div className="space-y-4">
@@ -85,7 +85,7 @@ export default function LoginPage() {
         </div>
 
         <p className="text-xs text-white/40">
-          &copy; {new Date().getFullYear()} ManyChat Analytics Dashboard
+          &copy; {new Date().getFullYear()} Manychat Analytics Dashboard
         </p>
       </div>
 
@@ -97,7 +97,7 @@ export default function LoginPage() {
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
               <span className="text-base font-bold text-white">M</span>
             </div>
-            <span className="text-lg font-semibold text-foreground">ManyChat</span>
+            <span className="text-lg font-semibold text-foreground">Manychat</span>
           </div>
 
           <div>
@@ -105,7 +105,7 @@ export default function LoginPage() {
               Connect your account
             </h1>
             <p className="mt-1.5 text-sm text-muted-foreground">
-              Enter your ManyChat API token to access analytics
+              Enter your Manychat API token to access analytics
             </p>
           </div>
 
@@ -135,7 +135,7 @@ export default function LoginPage() {
                 className="block w-full rounded-lg border border-input bg-card px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-colors"
               />
               <p className="text-xs text-muted-foreground">
-                Find this in ManyChat Settings &rarr; API &rarr; Get API Key
+                Find this in Manychat Settings &rarr; API &rarr; Get API Key
               </p>
             </div>
 

@@ -41,7 +41,7 @@ export function Sidebar({ onOpenAiChat }: SidebarProps) {
         <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
           <span className="text-sm font-bold text-white">M</span>
         </div>
-        <span className="text-[15px] font-semibold text-white">ManyChat</span>
+        <span className="text-[15px] font-semibold text-white">Manychat</span>
       </div>
 
       {/* Navigation */}
