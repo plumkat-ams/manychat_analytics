@@ -68,7 +68,7 @@ export const authConfig: NextAuthConfig = {
       }
       // Ensure session.user.id is set (required for useAccount / dashboard queries)
       if (session.user) {
-        (session.user as Record<string, string>).id = (token.sub as string) ?? "";
+        (session.user as unknown as Record<string, string>).id = (token.sub as string) ?? "";
       }
       return session;
     },

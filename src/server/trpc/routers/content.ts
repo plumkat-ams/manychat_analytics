@@ -100,7 +100,12 @@ export const contentRouter = createTRPCRouter({
         .limit(limit)
         .offset(offset);
 
-      return posts;
+      return posts.map((p) => ({
+        ...p,
+        leads: 0,
+        leadsPerKReach: 0,
+        automationCoverage: 0,
+      }));
     }),
 
   getScatterData: protectedProcedure

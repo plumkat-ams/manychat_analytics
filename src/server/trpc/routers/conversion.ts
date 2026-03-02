@@ -252,6 +252,6 @@ export const conversionRouter = createTRPCRouter({
           END
       `);
 
-      return ttc as Array<{ bucket: string; count: number }>;
+      return ttc as unknown as Array<{ bucket: string; count: number }>;
     }),
 });
