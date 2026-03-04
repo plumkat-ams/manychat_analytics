@@ -4,6 +4,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import { MOCK_ACCOUNT_ID } from "@/lib/mock-account";
 
 export const authConfig: NextAuthConfig = {
+  trustHost: true,
   providers: [
     // In production, replace with OAuth provider (e.g., Facebook/Instagram)
     CredentialsProvider({
